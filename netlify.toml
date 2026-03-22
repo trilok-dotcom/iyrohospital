@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g pnpm@9 && pnpm install --no-frozen-lockfile && pnpm run build"
+  command = "pnpm install --no-frozen-lockfile && pnpm run build"
   publish = "artifacts/hospital-website/dist/public"
 
 [build.environment]
