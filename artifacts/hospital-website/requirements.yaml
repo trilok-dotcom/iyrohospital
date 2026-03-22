@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "For smooth scroll and scroll-triggered fade-in animations"
+  "clsx": "For conditional class name merging"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/hospital-website/public/images/hero-abstract.png"
+    description: "Subtle, abstract, premium medical background with soft light blue and white gradients, clean geometric curves, very minimalistic and bright"
+    aspect_ratio: "16:9"
+  - path: "artifacts/hospital-website/public/images/modern-facility.png"
+    description: "Interior of a hyper-modern, luxurious hospital lobby, bright, clean, soft lighting, calming atmosphere, lots of white and light wood"
+    aspect_ratio: "16:9"
+
+notes:
+  - Frontend only mockup. Simulated mutations for forms and buttons using TanStack query and local state.

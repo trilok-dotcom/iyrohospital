@@ -1,0 +1,132 @@
+Create a premium, modern hospital website designed to improve patient experience, reduce stress, and simplify navigation inside a large multi-speciality hospital.
+
+This should NOT look like a basic hospital website. It should feel like a high-end digital system built for a top-tier hospital.
+
+---
+
+🎯 DESIGN STYLE:
+- Clean, minimal, professional
+- Color palette:
+  - Primary: Medical blue (#2F80ED)
+  - Secondary: Soft green (#27AE60)
+  - Background: White with light gradients
+- Use glassmorphism (subtle), soft shadows
+- Typography should be modern and highly readable
+- Overall feeling: Calm, trustworthy, efficient
+
+---
+
+📱 RESPONSIVE DESIGN:
+- Mobile-first approach
+- Must look equally premium on mobile and desktop
+- Smooth scrolling and clean layout
+
+---
+
+🚀 CORE SECTIONS:
+
+1. HERO SECTION
+- Headline:
+  “Redefining Your Hospital Experience”
+- Subtext:
+  “Faster access, less waiting, better care”
+- CTA buttons:
+  - “Book Appointment”
+  - “Find Department”
+- Subtle animated background (light particles or gradient motion)
+
+---
+
+2. QUICK ACCESS PANEL (VERY IMPORTANT)
+Display as cards:
+- Book Appointment
+- Find a Doctor
+- Emergency Services
+- Check Reports
+- Department Directory
+
+Add hover and click animations
+
+---
+
+3. SMART NAVIGATION SYSTEM
+- Search bar:
+  “Find doctors, departments, services…”
+- Department cards:
+  Cardiology, Neurology, Orthopedics, etc.
+- Clean grid layout with icons
+
+---
+
+4. WAITING EXPERIENCE SECTION (KEY DIFFERENTIATOR)
+Title:
+  “Designed Around Your Time”
+
+Features:
+- Estimated waiting time UI (mock)
+- “What to do while waiting” suggestions
+- Calm UI with relaxing visuals
+
+---
+
+5. DOCTORS & TRUST SECTION
+- Doctor cards:
+  - Name
+  - Specialization
+  - Experience
+- Clean, premium layout
+
+---
+
+6. WHY CHOOSE US
+- Advanced medical facilities
+- Experienced doctors
+- Patient-first approach
+- 24/7 emergency care
+
+Use icons + short descriptions
+
+---
+
+7. CONTACT & LOCATION
+- Phone number
+- Email
+- Address
+- Map placeholder
+
+---
+
+8. FOOTER
+- Clean and minimal
+- Quick links
+
+---
+
+🎨 ANIMATIONS:
+- Smooth fade-ins on scroll
+- Subtle hover effects
+- Micro-interactions on buttons
+- Avoid heavy or flashy animations
+
+---
+
+⚡ PERFORMANCE:
+- Fast loading
+- Optimized assets
+- Clean code structure
+
+---
+
+🧠 GOAL:
+When hospital management sees this, they should feel:
+“This improves patient flow, reduces confusion, and upgrades our hospital experience”
+
+NOT:
+“This is just a design project”
+
+---
+
+📦 TECH:
+- HTML, CSS, JS (or React)
+- Use modern UI libraries if needed
+- Keep it scalable and clean
