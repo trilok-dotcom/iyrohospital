@@ -1,0 +1,12 @@
+[build]
+  command = "npm install -g pnpm@9 && pnpm install --no-frozen-lockfile && pnpm run build"
+  publish = "artifacts/hospital-website/dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_FLAGS = "--no-frozen-lockfile"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
