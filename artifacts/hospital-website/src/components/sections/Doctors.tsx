@@ -3,12 +3,10 @@ import { Button } from "@/components/ui/button";
 import { AppointmentDialog } from "@/components/blocks/AppointmentDialog";
 
 const doctors = [
-  { name: "Dr. Sarah Mitchell", spec: "Cardiologist", exp: "15 years", initials: "SM", color: "bg-blue-100 text-blue-700" },
-  { name: "Dr. James Chen", spec: "Neurologist", exp: "12 years", initials: "JC", color: "bg-indigo-100 text-indigo-700" },
-  { name: "Dr. Priya Sharma", spec: "Orthopedic Surgeon", exp: "10 years", initials: "PS", color: "bg-emerald-100 text-emerald-700" },
-  { name: "Dr. Robert Kim", spec: "Oncologist", exp: "18 years", initials: "RK", color: "bg-purple-100 text-purple-700" },
-  { name: "Dr. Emily Watson", spec: "Pediatrician", exp: "8 years", initials: "EW", color: "bg-pink-100 text-pink-700" },
-  { name: "Dr. Michael Torres", spec: "Radiologist", exp: "14 years", initials: "MT", color: "bg-orange-100 text-orange-700" },
+  { name: "Dr. Rakesh Sharma", spec: "Cardiologist", exp: "18 years", initials: "RS", color: "bg-blue-100 text-blue-700" },
+  { name: "Dr. Priya Nair", spec: "Neurologist", exp: "14 years", initials: "PN", color: "bg-indigo-100 text-indigo-700" },
+  { name: "Dr. Arjun Reddy", spec: "Orthopedic Surgeon", exp: "12 years", initials: "AR", color: "bg-emerald-100 text-emerald-700" },
+  { name: "Dr. Sneha Iyer", spec: "Pediatrician", exp: "10 years", initials: "SI", color: "bg-purple-100 text-purple-700" },
 ];
 
 export function Doctors() {
@@ -28,7 +26,7 @@ export function Doctors() {
           </AnimatedSection>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {doctors.map((doc, i) => (
             <AnimatedSection key={i} delay={0.1 * i}>
               <div className="group rounded-3xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-xl hover:border-slate-200 transition-all duration-300">

@@ -16,8 +16,8 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
                 <Activity className="text-white w-6 h-6" />
               </div>
-              <span className="font-display font-bold text-2xl tracking-tight text-white">
-                MediCare<span className="text-primary">+</span>
+              <span className="font-display font-bold text-xl md:text-2xl tracking-tight text-white">
+                Ramaiah <span className="text-primary">Memorial Hospital</span>
               </span>
             </div>
             <p className="text-slate-400 mb-6 max-w-sm">
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} MediCare+ Hospital. All rights reserved.</p>
+          <p>© 2024 Ramaiah Memorial Hospital. All rights reserved.</p>
           <p>Designed for excellence.</p>
         </div>
       </div>

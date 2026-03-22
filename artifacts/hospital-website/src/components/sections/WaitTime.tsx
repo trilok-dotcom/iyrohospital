@@ -32,7 +32,7 @@ export function WaitTime() {
             <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">The Experience</h2>
             <h3 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">Designed Around Your Time</h3>
             <p className="text-lg text-muted-foreground mb-8">
-              We respect that your time is precious. Our smart queue system and premium amenities ensure your visit is as comfortable and efficient as possible.
+              We aim to reduce waiting stress and improve patient comfort.
             </p>
             
             {/* Wait time UI Card */}

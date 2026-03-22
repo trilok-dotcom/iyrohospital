@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CalendarCheck, Search, Users, Activity, Clock, ShieldCheck } from "lucide-react";
+import { CalendarCheck, Search, Users, Activity, Clock, ShieldCheck, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AppointmentDialog } from "@/components/blocks/AppointmentDialog";
 
@@ -40,8 +40,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Redefining Your <br />
-              <span className="text-gradient">Hospital Experience</span>
+              Advanced Care. <br />
+              <span className="text-gradient">Trusted Excellence.</span>
             </motion.h1>
             
             <motion.p 
@@ -50,7 +50,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Faster access, less waiting, and better care. We combine world-class medical expertise with a premium, patient-first approach.
+              Providing world-class healthcare with compassion and precision.
             </motion.p>
             
             <motion.div 
@@ -65,9 +65,9 @@ export function Hero() {
                   Book Appointment
                 </Button>
               </AppointmentDialog>
-              <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base bg-white/50 backdrop-blur-sm border-gray-200 hover:bg-gray-50" onClick={scrollToDepartments}>
-                <Search className="mr-2 w-5 h-5" />
-                Find Department
+              <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base bg-white/50 backdrop-blur-sm border-gray-200 hover:bg-gray-50" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Phone className="mr-2 w-5 h-5" />
+                Emergency Help
               </Button>
             </motion.div>
           </div>

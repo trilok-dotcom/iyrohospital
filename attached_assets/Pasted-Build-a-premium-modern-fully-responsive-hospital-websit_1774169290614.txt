@@ -1,0 +1,182 @@
+Build a premium, modern, fully responsive hospital website for:
+
+"Ramaiah Memorial Hospital, Bengaluru"
+
+This website should look like a real-world, high-end hospital platform — not a student project.
+
+---
+
+🎯 GOAL:
+Create a website that improves patient experience, builds trust, and looks professional enough for hospital management to consider using.
+
+---
+
+🎨 DESIGN STYLE:
+- Clean, minimal, medical-grade UI
+- Color palette:
+  - Primary: #2F80ED (medical blue)
+  - Secondary: #27AE60 (green)
+  - Background: white with soft gradients
+- Use modern fonts (Inter or Poppins)
+- Add subtle glassmorphism effects (soft blur, transparency)
+- Plenty of spacing (premium feel)
+- Soft shadows, rounded corners
+- Calm, trustworthy, professional look
+
+---
+
+📱 RESPONSIVENESS:
+- Mobile-first design
+- Fully responsive for mobile, tablet, desktop
+- Clean stacking of sections on mobile
+- Touch-friendly buttons
+
+---
+
+🚀 WEBSITE STRUCTURE:
+
+1. NAVBAR (Sticky)
+- Logo: Ramaiah Memorial Hospital
+- Links:
+  Home | Departments | Doctors | Services | Contact
+- Add shadow on scroll
+- Smooth scrolling navigation
+
+---
+
+2. HERO SECTION
+- Large bold heading:
+  “Advanced Care. Trusted Excellence.”
+- Subtext:
+  “Providing world-class healthcare with compassion and precision”
+- Buttons:
+  - Book Appointment
+  - Emergency Help
+- Add subtle animated gradient background
+- Add floating medical icons (very light animation)
+
+---
+
+3. QUICK ACCESS (VERY IMPORTANT)
+Create 4–5 interactive cards:
+- Book Appointment
+- Find Doctor
+- Emergency Services
+- View Reports
+- Department Directory
+
+Each card:
+- Icon
+- Title
+- Short description
+- Hover animation (lift + shadow)
+
+---
+
+4. DEPARTMENTS SECTION
+Display cards for:
+- Cardiology
+- Neurology
+- Orthopedics
+- Oncology
+- Pediatrics
+- Nephrology
+
+Each card:
+- Icon/image
+- Short description
+- Hover animation
+
+---
+
+5. DOCTORS SECTION
+Create doctor profile cards:
+- Image (use placeholder)
+- Name:
+  - Dr. Rakesh Sharma – Cardiology
+  - Dr. Priya Nair – Neurology
+  - Dr. Arjun Reddy – Orthopedics
+  - Dr. Sneha Iyer – Pediatrics
+- Add hover animation (scale + shadow)
+
+---
+
+6. SERVICES / WHY CHOOSE US
+Show key highlights:
+- Experienced Doctors
+- Advanced Medical Technology
+- 24/7 Emergency Care
+- Patient-Centered Approach
+
+Use icons + short descriptions
+
+---
+
+7. WAITING EXPERIENCE SECTION (UNIQUE FEATURE)
+Title:
+  “Designed Around Your Time”
+
+Include:
+- Mock UI showing “Estimated Waiting Time”
+- Calm text:
+  “We aim to reduce waiting stress and improve patient comfort”
+- Clean card layout
+
+---
+
+8. CONTACT SECTION (REAL DETAILS)
+Include:
+📍 New BEL Rd, M S Ramaiah Nagar, Bengaluru – 560054
+📞 +91 80 6215 3300
+🚑 Emergency: 1800 123 1133
+📧 contact@msrmh.com
+
+Add:
+- Contact form (name, email, message)
+- Map placeholder
+
+---
+
+9. FOOTER
+- Quick links
+- Social icons
+- Clean layout
+- Copyright
+
+---
+
+🎨 ANIMATIONS:
+- Smooth scroll animations
+- Fade-in effects
+- Card hover lift
+- Button hover glow
+- Subtle micro-interactions (NOT flashy)
+
+---
+
+⚡ PERFORMANCE:
+- Fast loading
+- Optimized images
+- Clean code
+
+---
+
+📦 TECH:
+- Use HTML, CSS, JavaScript OR React
+- Keep code clean and modular
+- Use reusable components if React
+
+---
+
+🧠 EXTRA FEATURES (IMPORTANT):
+- Functional “Book Appointment” form (basic frontend)
+- Search bar for doctors/departments (UI only is fine)
+- Sticky navbar
+- Smooth scrolling
+
+---
+
+🚨 FINAL OUTPUT:
+- Complete working website
+- Premium UI/UX
+- Looks like a real hospital website ready for deployment

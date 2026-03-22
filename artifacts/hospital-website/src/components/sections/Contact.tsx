@@ -36,8 +36,18 @@ export function Contact() {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
+                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Phone</h4>
+                  <p className="text-xl font-bold text-gray-900 font-display">+91 80 6215 3300</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-red-500" />
+                </div>
+                <div>
                   <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Emergency 24/7</h4>
-                  <p className="text-2xl font-bold text-gray-900 font-display">+1 (800) 234-5678</p>
+                  <p className="text-2xl font-bold text-red-600 font-display">1800 123 1133</p>
                 </div>
               </div>
               
@@ -47,7 +57,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Email Us</h4>
-                  <p className="text-xl font-medium text-gray-900">care@medicare-plus.com</p>
+                  <p className="text-xl font-medium text-gray-900">contact@msrmh.com</p>
                 </div>
               </div>
 
@@ -57,7 +67,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Location</h4>
-                  <p className="text-lg font-medium text-gray-900 max-w-xs">123 Medical Center Drive, Healthcare City, CA 90210</p>
+                  <p className="text-lg font-medium text-gray-900 max-w-xs">New BEL Rd, M S Ramaiah Nagar, Bengaluru – 560054</p>
                 </div>
               </div>
             </div>

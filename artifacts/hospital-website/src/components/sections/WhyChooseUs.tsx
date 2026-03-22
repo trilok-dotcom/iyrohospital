@@ -4,17 +4,17 @@ import { AnimatedSection } from "@/components/blocks/AnimatedSection";
 const features = [
   {
     icon: Award,
-    title: "Advanced Facilities",
+    title: "Experienced Doctors",
     desc: "Equipped with latest medical technology and state-of-the-art operation theaters for precise treatments."
   },
   {
     icon: HeartHandshake,
-    title: "Patient-First Approach",
+    title: "Patient-Centered Approach",
     desc: "Every protocol is designed around your comfort, privacy, and speed of recovery."
   },
   {
     icon: ShieldCheck,
-    title: "Expert Clinical Team",
+    title: "Advanced Medical Technology",
     desc: "A multidisciplinary board of certified doctors collaborating for your complete wellness."
   },
   {

@@ -28,7 +28,7 @@ export function Navbar() {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-white/80 backdrop-blur-lg border-b border-border shadow-sm py-3" 
+          ? "bg-white/80 backdrop-blur-lg border-b border-border shadow-md py-3" 
           : "bg-transparent py-5"
       }`}
     >
@@ -40,8 +40,8 @@ export function Navbar() {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
               <Activity className="text-white w-6 h-6" />
             </div>
-            <span className="font-display font-bold text-2xl tracking-tight text-foreground">
-              MediCare<span className="text-primary">+</span>
+            <span className="font-display font-bold text-xl md:text-2xl tracking-tight text-foreground">
+              Ramaiah <span className="text-primary">Memorial Hospital</span>
             </span>
           </Link>
 

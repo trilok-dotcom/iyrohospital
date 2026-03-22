@@ -8,13 +8,9 @@ const departments = [
   { id: 'cardiology', name: "Cardiology", icon: HeartPulse, desc: "Heart & vascular care" },
   { id: 'neurology', name: "Neurology", icon: Brain, desc: "Brain & nervous system" },
   { id: 'orthopedics', name: "Orthopedics", icon: Bone, desc: "Bones, joints & muscles" },
+  { id: 'oncology', name: "Oncology", icon: Activity, desc: "Cancer care & treatment" },
   { id: 'pediatrics', name: "Pediatrics", icon: Baby, desc: "Children's healthcare" },
-  { id: 'ophthalmology', name: "Ophthalmology", icon: Eye, desc: "Eye care & surgery" },
-  { id: 'ent', name: "ENT", icon: Ear, desc: "Ear, nose & throat" },
-  { id: 'dermatology', name: "Dermatology", icon: Sparkles, desc: "Skin, hair & nails" },
-  { id: 'psychiatry', name: "Psychiatry", icon: Activity, desc: "Mental health services" },
-  { id: 'pulmonology', name: "Pulmonology", icon: Stethoscope, desc: "Respiratory care" },
-  { id: 'radiology', name: "Radiology", icon: Microscope, desc: "Imaging & diagnostics" },
+  { id: 'nephrology', name: "Nephrology", icon: Microscope, desc: "Kidney care & treatment" },
 ];
 
 export function Departments() {
@@ -46,7 +42,7 @@ export function Departments() {
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {filteredDeps.map((dept, i) => (
             <AnimatedSection key={dept.name} delay={0.1 * (i % 5)}>
               <AppointmentDialog defaultDepartment={dept.id}>

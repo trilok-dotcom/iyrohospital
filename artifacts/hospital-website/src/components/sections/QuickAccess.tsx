@@ -11,7 +11,7 @@ const quickLinks = [
     action: "dialog"
   },
   {
-    title: "Find a Doctor",
+    title: "Find Doctor",
     description: "Search by specialty or name",
     icon: UserCheck,
     color: "bg-indigo-50 text-indigo-600",
@@ -27,20 +27,12 @@ const quickLinks = [
     target: "contact"
   },
   {
-    title: "Check Reports",
+    title: "View Reports",
     description: "Access your medical records",
     icon: FileText,
     color: "bg-emerald-50 text-emerald-600",
     action: "toast",
     message: "Patient portal integration required."
-  },
-  {
-    title: "Locations",
-    description: "Find our facilities easily",
-    icon: MapPin,
-    color: "bg-orange-50 text-orange-500",
-    action: "scroll",
-    target: "contact"
   }
 ];
 
@@ -59,7 +51,7 @@ export function QuickAccess() {
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl shadow-black/5 border border-slate-100">
             <h2 className="text-xl font-bold mb-6 font-display text-gray-900">Quick Access</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {quickLinks.map((link, idx) => {
                 const CardContent = (
                   <div 
