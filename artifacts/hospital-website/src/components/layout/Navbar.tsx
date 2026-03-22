@@ -77,13 +77,14 @@ export function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-4">
-          <button onClick={() => scrollToSection('home')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg">Home</button>
-          <button onClick={() => scrollToSection('departments')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg">Departments</button>
-          <button onClick={() => scrollToSection('doctors')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg">Doctors</button>
-          <button onClick={() => scrollToSection('contact')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg">Contact</button>
-          <div className="pt-4 border-t border-border">
+          <button onClick={() => scrollToSection('home')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg w-full">Home</button>
+          <button onClick={() => scrollToSection('departments')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg w-full">Departments</button>
+          <button onClick={() => scrollToSection('doctors')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg w-full">Doctors</button>
+          <button onClick={() => scrollToSection('experience')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg w-full">Services</button>
+          <button onClick={() => scrollToSection('contact')} className="text-left text-lg font-medium p-2 hover:bg-muted rounded-lg w-full">Contact</button>
+          <div className="pt-4 border-t border-border w-full">
             <AppointmentDialog>
-              <Button className="w-full rounded-full">Book Appointment</Button>
+              <Button className="w-full rounded-full" onClick={() => setMobileMenuOpen(false)}>Book Appointment</Button>
             </AppointmentDialog>
           </div>
         </div>

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Search, HeartPulse, Brain, Bone, Baby, Eye, Ear, Sparkles, Activity, Stethoscope, Microscope } from "lucide-react";
+import { Search, HeartPulse, Brain, Bone, Baby, Activity, Microscope } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { AnimatedSection } from "@/components/blocks/AnimatedSection";
 import { AppointmentDialog } from "@/components/blocks/AppointmentDialog";
+import { Button } from "@/components/ui/button";
 
 const departments = [
   { id: 'cardiology', name: "Cardiology", icon: HeartPulse, desc: "Heart & vascular care" },
@@ -35,23 +36,38 @@ export function Departments() {
         <AnimatedSection delay={0.2} className="max-w-xl mx-auto mb-12 relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
           <Input 
-            className="pl-12 h-14 rounded-full bg-slate-50 border-transparent focus:bg-white focus:ring-2 focus:ring-primary/20 text-lg shadow-sm"
+            className="pl-12 h-14 rounded-full bg-slate-50 border-transparent focus:bg-white focus:ring-2 focus:ring-primary/20 text-lg shadow-sm w-full"
             placeholder="Find doctors, departments, services..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {filteredDeps.map((dept, i) => (
-            <AnimatedSection key={dept.name} delay={0.1 * (i % 5)}>
+            <AnimatedSection key={dept.name} delay={0.1 * (i % 6)}>
               <AppointmentDialog defaultDepartment={dept.id}>
-                <div className="group cursor-pointer h-full bg-slate-50 hover:bg-primary border border-transparent hover:border-primary/20 rounded-2xl p-6 transition-all duration-300 text-center flex flex-col items-center justify-center hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-2">
-                  <div className="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <dept.icon className="w-8 h-8 text-primary group-hover:text-primary transition-colors" />
+                <div 
+                  className="group relative h-[220px] w-full cursor-pointer [perspective:1000px]"
+                >
+                  <div className="absolute inset-0 transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    {/* Front of card */}
+                    <div className="absolute inset-0 bg-slate-50 border border-slate-100 rounded-3xl p-6 flex flex-col items-center justify-center [backface-visibility:hidden] shadow-sm">
+                      <div className="w-20 h-20 rounded-full bg-white shadow-sm flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+                        <dept.icon className="w-10 h-10 text-primary" />
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">{dept.name}</h4>
+                    </div>
+
+                    {/* Back of card */}
+                    <div className="absolute inset-0 bg-primary text-white rounded-3xl p-6 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)] shadow-xl shadow-primary/20">
+                      <h4 className="text-xl font-bold mb-2">{dept.name}</h4>
+                      <p className="text-blue-100 text-center text-sm mb-6">{dept.desc}</p>
+                      <Button variant="secondary" className="rounded-full bg-white text-primary hover:bg-slate-100">
+                        Book Now
+                      </Button>
+                    </div>
                   </div>
-                  <h4 className="font-semibold text-gray-900 group-hover:text-white transition-colors">{dept.name}</h4>
-                  <p className="text-sm text-gray-500 mt-2 group-hover:text-blue-100 transition-colors">{dept.desc}</p>
                 </div>
               </AppointmentDialog>
             </AnimatedSection>

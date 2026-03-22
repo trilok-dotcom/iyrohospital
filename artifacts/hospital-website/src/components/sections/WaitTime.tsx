@@ -23,10 +23,10 @@ export function WaitTime() {
 
   return (
     <section id="experience" className="py-24 bg-slate-50 relative overflow-hidden">
-      <div className="absolute right-0 top-0 w-1/2 h-full bg-blue-50/50 rounded-l-full blur-3xl opacity-50 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full bg-blue-50/50 rounded-l-full blur-3xl opacity-50 pointer-events-none"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center flex-col">
           
           <AnimatedSection>
             <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">The Experience</h2>
@@ -36,10 +36,10 @@ export function WaitTime() {
             </p>
             
             {/* Wait time UI Card */}
-            <div className="bg-white rounded-3xl p-8 shadow-xl shadow-black/5 border border-slate-100 mb-8">
-              <div className="flex items-center justify-between mb-6">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-black/5 border border-slate-100 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4 sm:gap-0">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -53,7 +53,7 @@ export function WaitTime() {
                     </div>
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="text-left sm:text-right">
                   <span className="block text-2xl font-bold text-gray-900 font-display">~15 min</span>
                   <span className="text-sm text-gray-500">Current Wait</span>
                 </div>
@@ -69,16 +69,16 @@ export function WaitTime() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.2}>
-            <div className="bg-white rounded-3xl p-8 shadow-xl shadow-black/5 border border-slate-100">
+          <AnimatedSection delay={0.2} className="w-full">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-black/5 border border-slate-100">
               <h4 className="text-xl font-bold font-display text-gray-900 mb-6">While You Wait</h4>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {amenities.map((item, i) => (
                   <motion.div 
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 + (i * 0.1) }}
+                    transition={{ delay: 0.1 + (i * 0.1) }}
                     viewport={{ once: true }}
                     className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors"
                   >

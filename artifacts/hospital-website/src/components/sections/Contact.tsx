@@ -21,7 +21,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 flex-col">
           
           <AnimatedSection>
             <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">Get in Touch</h2>
@@ -30,44 +30,44 @@ export function Contact() {
               Have a question about our services or need help finding the right department? Reach out to our dedicated support team.
             </p>
 
-            <div className="space-y-8 mb-10">
+            <div className="space-y-6 sm:space-y-8 mb-10">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Phone</h4>
-                  <p className="text-xl font-bold text-gray-900 font-display">+91 80 6215 3300</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Phone</h4>
+                  <p className="text-lg sm:text-xl font-bold text-gray-900 font-display">+91 80 6215 3300</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5 text-red-500" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Emergency 24/7</h4>
-                  <p className="text-2xl font-bold text-red-600 font-display">1800 123 1133</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Emergency 24/7</h4>
+                  <p className="text-xl sm:text-2xl font-bold text-red-600 font-display">1800 123 1133</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Email Us</h4>
-                  <p className="text-xl font-medium text-gray-900">contact@msrmh.com</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Email Us</h4>
+                  <p className="text-lg sm:text-xl font-medium text-gray-900 break-all">contact@msrmh.com</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Location</h4>
-                  <p className="text-lg font-medium text-gray-900 max-w-xs">New BEL Rd, M S Ramaiah Nagar, Bengaluru – 560054</p>
+                  <h4 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Location</h4>
+                  <p className="text-base sm:text-lg font-medium text-gray-900 max-w-xs">New BEL Rd, M S Ramaiah Nagar, Bengaluru – 560054</p>
                 </div>
               </div>
             </div>
@@ -83,8 +83,8 @@ export function Contact() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.2}>
-            <div className="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-200">
+          <AnimatedSection delay={0.2} className="w-full">
+            <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200 w-full">
               <h4 className="text-2xl font-bold font-display text-gray-900 mb-6">Send a Message</h4>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
@@ -92,7 +92,7 @@ export function Contact() {
                   <Input 
                     id="contact-name" 
                     placeholder="John Doe" 
-                    className="bg-white h-12" 
+                    className="bg-white h-12 w-full" 
                     required
                     value={formData.name}
                     onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
@@ -104,7 +104,7 @@ export function Contact() {
                     id="contact-email" 
                     type="email" 
                     placeholder="john@example.com" 
-                    className="bg-white h-12" 
+                    className="bg-white h-12 w-full" 
                     required
                     value={formData.email}
                     onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
@@ -115,7 +115,7 @@ export function Contact() {
                   <Textarea 
                     id="contact-message" 
                     placeholder="Please describe your inquiry..." 
-                    className="bg-white min-h-[150px] resize-none" 
+                    className="bg-white min-h-[150px] resize-none w-full" 
                     required
                     value={formData.message}
                     onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}

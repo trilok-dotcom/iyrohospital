@@ -1,5 +1,6 @@
 import { ShieldCheck, Award, HeartHandshake, Clock } from "lucide-react";
 import { AnimatedSection } from "@/components/blocks/AnimatedSection";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -26,10 +27,30 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500 via-transparent to-transparent"></div>
+    <section className="py-24 bg-slate-900 text-white relative overflow-hidden [perspective:1000px]">
+      {/* 3D Decorative Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent"></div>
+        
+        {/* Floating Geometric Shapes with 3D rotation */}
+        <motion.div 
+          className="absolute top-10 left-[10%] w-64 h-64 border border-blue-500/20 rounded-full"
+          animate={{ rotateX: 360, rotateY: 180 }}
+          transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+          style={{ transformStyle: "preserve-3d" }}
+        />
+        <motion.div 
+          className="absolute bottom-20 right-[10%] w-80 h-80 border-2 border-purple-500/10 rounded-xl"
+          animate={{ rotateX: -360, rotateY: 360, rotateZ: 180 }}
+          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+          style={{ transformStyle: "preserve-3d" }}
+        />
+        <motion.div 
+          className="absolute top-[40%] right-[30%] w-32 h-32 bg-blue-400/5 backdrop-blur-3xl rounded-lg"
+          animate={{ rotateX: 180, rotateY: -360, z: [0, 100, 0] }}
+          transition={{ repeat: Infinity, duration: 15, ease: "easeInOut" }}
+          style={{ transformStyle: "preserve-3d" }}
+        />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -44,12 +65,12 @@ export function WhyChooseUs() {
         <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
           {features.map((feat, i) => (
             <AnimatedSection key={i} delay={0.1 * i}>
-              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 hover:bg-slate-800 transition-colors">
+              <div className="bg-slate-800/50 backdrop-blur-md border border-slate-700/50 rounded-3xl p-6 sm:p-8 hover:bg-slate-800 transition-colors shadow-2xl shadow-black/20">
                 <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-6">
                   <feat.icon className="w-7 h-7 text-blue-400" />
                 </div>
-                <h4 className="text-2xl font-bold font-display mb-3">{feat.title}</h4>
-                <p className="text-slate-400 leading-relaxed text-lg">{feat.desc}</p>
+                <h4 className="text-xl sm:text-2xl font-bold font-display mb-3">{feat.title}</h4>
+                <p className="text-slate-400 leading-relaxed text-base sm:text-lg">{feat.desc}</p>
               </div>
             </AnimatedSection>
           ))}
